@@ -14,3 +14,15 @@ a {
 a:visited, a:hover, a:active {
   color: inherit;
 }
+
+#main_h1 {
+  position:fixed;
+  margin: 0 0 0 15px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 300%;
+}
+
+#dog_banner {
+  width: 100%;
+  margin-top: 15px;
+}

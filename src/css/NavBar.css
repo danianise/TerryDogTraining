@@ -1,9 +1,9 @@
 .header {
     position: absolute;
-    height: 90px;
+    height: 75px;
     width: 100vw;
     top: 0;
-    left: 0;
+    left: 63%;
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
@@ -12,7 +12,7 @@
 }
 
 .header a {
-    color: white;
+    color: black;
 }
 
 .header .navbar {
@@ -49,6 +49,7 @@
     .header {
         max-width: 100%;
         top: 0;
+        left: 95%;
     }
 
     .header .navbar {
@@ -77,7 +78,7 @@
     }
 
     .nav-menu.active {
-        left: 0;
+        right: 0;
     }
 
     .nav-item {

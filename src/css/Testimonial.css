@@ -1,0 +1,41 @@
+.testimonial {
+    border: 1px solid black;
+    margin: 15px;
+    /* width: 30%; */
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    text-align: justify;
+}
+
+#testimonial_p {
+    padding: 15px;
+    /* position: relative; */
+}
+
+#testimonial_name {
+    padding: 10px;
+    background: linear-gradient(to left, rgb(252, 251, 251), 50%, rgba(0, 0, 0, 0.9));
+    color: white;
+    width: 94.5;
+    border-bottom-right-radius: 2rem;
+    margin: 30px 0 0 0;
+}
+
+#testimonial_name:hover{
+    background: linear-gradient(to right, rgb(252, 251, 251), 50%, rgba(0, 0, 0, 0.9));
+    color: black;
+}
+
+#left_quote{
+    float: left;
+    margin: 10px 0 0 10px;
+    font-size: 350%;
+    opacity: 0.3;
+}
+
+#right_quote{
+    float: right;
+    margin: 0 10px 10px 0;
+    font-size: 350%;
+    opacity: 0.3;
+}
