@@ -1,7 +1,7 @@
 .header {
     position: absolute;
     height: 75px;
-    width: 100vw;
+    /* width: 100vw; */
     top: 0;
     left: 63%;
     z-index: 1;
@@ -48,8 +48,8 @@
 @media screen and (max-width:1170px) {
     .header {
         max-width: 100%;
-        top: 0;
-        left: 95%;
+        top: -1%;
+        left: 90vw;
     }
 
     .header .navbar {
@@ -58,7 +58,6 @@
     
     .hamburger {
         display: block;
-        margin: 15px 10px 0 0;
         cursor: pointer;
     }
 
