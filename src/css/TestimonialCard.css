@@ -1,4 +1,4 @@
-.testimonial {
+.testimonial_card {
     border: 1px solid black;
     margin: 15px;
     /* width: 30%; */
@@ -7,12 +7,12 @@
     text-align: justify;
 }
 
-#testimonial_p {
+#testimonial_card_p {
     padding: 15px;
     /* position: relative; */
 }
 
-#testimonial_name {
+#testimonial_card_name {
     padding: 10px;
     background: linear-gradient(to left, rgb(252, 251, 251), 50%, rgba(0, 0, 0, 0.9));
     color: white;
@@ -21,7 +21,7 @@
     margin: 30px 0 0 0;
 }
 
-#testimonial_name:hover{
+#testimonial_card_name:hover{
     background: linear-gradient(to right, rgb(252, 251, 251), 50%, rgba(0, 0, 0, 0.9));
     color: black;
 }
