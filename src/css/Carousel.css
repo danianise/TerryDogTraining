@@ -1,4 +1,4 @@
-.slideshowImages {
+/* .slideshowImages {
     height: 60vh;
     max-width: 60vw;
     border-radius: 0.7%;
@@ -6,13 +6,14 @@
 
 .singleListingImage {
     margin-bottom: 80px;
-}
+} */
 
 .slide-container {
     padding: 0;
-    margin: 10vh auto;
-    width: 60vw;
-    height: 60vh;
+    margin: 0 auto;
+    width: 95vw;
+    /* height: 20vh; */
+    /* z-index: 1; */
 }
 
 .eachFade {
@@ -20,7 +21,7 @@
     justify-content: center;
     align-items: center;
 }
-
+/* 
 #slide-container-listing-detail {
     margin-top: 0;
 }
@@ -34,7 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .lds-spinner {
     color: official;

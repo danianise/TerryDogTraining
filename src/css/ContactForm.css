@@ -1,0 +1,14 @@
+.contactForm {
+    text-align: center;
+    width: 90vw;
+    margin: 20px auto;
+  }
+  
+  Form {
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 20px;
+    margin-bottom: 20px !important;
+  }

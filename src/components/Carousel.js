@@ -1,21 +1,20 @@
 import React, {useContext} from 'react'
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
+import "../css/TestimonialCard.css"
 import '../css/Carousel.css'
 
-function Slideshow() {
+function Carousel({testimonialArray}) {
 
-    let fadeImages = [
-      "images/dog_1.jpeg",
-      "images/dog_2.jpeg",
-      "images/dog_3.jpeg",
-      "images/dog_4.jpeg",
-      "images/dog_5.jpeg",
-      "images/dog_6.jpeg"
-    ]
+    // let abbreviated = []
+
+    // testimonialArray.map((eachTestimonial) => {
+    //   abbreviated.push(eachTestimonial.abbreviated)
+    // })
   
   return (
-    fadeImages.length === 0
+    testimonialArray.length === 0
   ? <>
     <div className="lds-spinner">
         <div></div>
@@ -35,16 +34,24 @@ function Slideshow() {
   : <>
     <div className="slide-container">
       <Fade indicators={true} canSwipe={true}>
-        {fadeImages.map((fadeImage, index) => (
+        {testimonialArray.map((eachTestimonial, index) => (
           <div className="each-fade" key={index}>
-            <div className="image-container">
-              {/* <a href={fadeImage.href}> */}
-                <img 
-                src={fadeImages[index]} 
-                className="slideshowImages" 
-                />
-              {/* </a> */}
-            </div>
+            <div className='testimonial_card'>
+                        <span id='left_quote'>
+                            <FaQuoteLeft />
+                        </span>
+                        <br />
+                        <br />
+                        <p id='testimonial_card_p'>
+                            {eachTestimonial.abbreviated}
+                            <span id='right_quote'>
+                                <FaQuoteRight />
+                            </span>
+                        </p>
+                        <p id='testimonial_card_name'>
+                            {eachTestimonial.name}
+                        </p>
+                    </div>
           </div>
         ))}
       </Fade>
@@ -53,4 +60,4 @@ function Slideshow() {
   )
 }
 
-export default Slideshow
+export default Carousel
