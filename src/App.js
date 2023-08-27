@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import TestimonialCard from './components/TestimonialCard';
 import Carousel from './components/Carousel';
 import { ContactForm } from './components/ContactForm.js';
+import About from './components/About';
 
 function App() {
 
@@ -50,6 +51,14 @@ function App() {
       <img id='dog_banner' src="images/dog_banner.png"/>
       <NavBar />
       <Routes>
+
+      <Route 
+          path='/about'
+          element={
+            <About />
+          }
+          >
+        </Route>
 
         <Route 
           path='/testimonials'
