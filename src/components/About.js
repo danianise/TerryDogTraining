@@ -1,9 +1,10 @@
 import React from 'react'
+import "../css/About.css"
 
 function About() {
   return (
-    <div>
-        <h2>
+    <div className='about'>
+        <h2 id='firstH2'>
             Unleash Your Dog's Potential with Positive Training Methods
         </h2>
         <p>
@@ -53,7 +54,7 @@ function About() {
         moments as your dog develops positive behaviors is what fuels my passion. I invite you to join me on this
          journey of growth, companionship, and harmony as we unlock your dog's full potential together.
 
-        <h2><br />
+        <h2 id='about_link'>
             <a href='/contact'>Contact Me</a>
         </h2>
         <p>
