@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from 'react-router-dom'
 import NavBar from './components/NavBar';
 import TestimonialCard from './components/TestimonialCard';
 import Carousel from './components/Carousel';
-import ContactForm from './components/ContactForm';
+import { ContactForm } from './components/ContactForm.js';
 
 function App() {
 
@@ -49,9 +49,29 @@ function App() {
       <h1 id='main_h1'>Dog Training with Terry Cormier</h1>
       <img id='dog_banner' src="images/dog_banner.png"/>
       <NavBar />
-      {/* <TestimonialCard testimonialArray={testimonialArray} /> */}
+      <Routes>
+
+        <Route 
+          path='/testimonials'
+          element={
+            <TestimonialCard 
+              testimonialArray={testimonialArray} 
+            />
+          }
+          >
+        </Route>
+
+        <Route 
+          path='/contact'
+          element={
+            <ContactForm />
+          }
+          >
+        </Route>
+
+      </Routes>
       {/* <Carousel testimonialArray={testimonialArray} /> */}
-      <ContactForm />
+      {/* <ContactForm /> */}
     </div>
   );
 }

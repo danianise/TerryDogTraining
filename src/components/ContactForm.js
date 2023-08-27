@@ -1,10 +1,10 @@
 import React, {useRef} from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 import '../css/ContactForm.css'
 import Swal from 'sweetalert2'
 
-function ContactForm() {
+export const ContactForm = () => {
 
     const SERVICE_ID = "service_geyr7xg";
 const TEMPLATE_ID = "template_1mzgvd4";
@@ -14,7 +14,8 @@ const form = useRef()
 
 const handleOnSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+    // const form = useRef()
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then((result) => {
         console.log(result.text);
         Swal.fire({
@@ -36,6 +37,7 @@ const handleOnSubmit = (e) => {
     <div className='contactForm'>
       <Form
        onSubmit={handleOnSubmit}
+       ref={form}
       >
         
         <Form.Field
@@ -52,7 +54,7 @@ const handleOnSubmit = (e) => {
           id='form-input-control-email'
           control={Input}
           label='Email'
-          name='user_email'
+          name='reply_to'
           placeholder='Email…'
           required
           icon='mail'
@@ -81,9 +83,9 @@ const handleOnSubmit = (e) => {
         <Form.Field
           id='form-input-control-dog-breed'
           control={Input}
-          label='Dog Breed, Age, Gender'
-          name='dog_breed'
-          placeholder='Dog Breed, Age, Gender...'
+          label='Dog Name, Breed, Age, Gender'
+          name='dog_description'
+          placeholder='Dog Name, Breed, Age, Gender...'
           required
           icon='paw'
           iconPosition='left'
@@ -102,4 +104,4 @@ const handleOnSubmit = (e) => {
   )
 }
 
-export default ContactForm
+// export default ContactForm
