@@ -53,9 +53,12 @@ function About() {
         I am all about making training a delightful adventure. Watching tails wag and witnessing those "aha" 
         moments as your dog develops positive behaviors is what fuels my passion. I invite you to join me on this
          journey of growth, companionship, and harmony as we unlock your dog's full potential together.
+        </p>
 
-        <h2 id='about_link'>
-            <a href='/contact'>Contact Me</a>
+        <h2>
+            <a href='/contact'>
+                Contact Me
+            </a>
         </h2>
         <p>
         Ready to embark on a training experience that's as enriching as it is enjoyable? Reach out to me today by filling out <a href='/contact'><b>THIS FORM</b></a>, 
@@ -67,7 +70,7 @@ function About() {
 
 
 
-        </p>
+        
 
     </div>
   )

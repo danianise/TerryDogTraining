@@ -1,7 +1,6 @@
 .testimonial_card {
     border: 1px solid black;
     margin: 15px;
-    /* width: 30%; */
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     text-align: justify;
@@ -38,4 +37,19 @@
     margin: 0 10px 10px 0;
     font-size: 350%;
     opacity: 0.3;
+}
+
+#testimonial_text{
+    width: 70%;
+    height: fit-content;
+}
+
+#testimonial_main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#testimonial_dog img{
+    height: auto;
+    width: 20vw;
 }
