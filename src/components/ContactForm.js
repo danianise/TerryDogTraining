@@ -3,16 +3,23 @@ import emailjs from '@emailjs/browser'
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 import '../css/ContactForm.css'
 import Swal from 'sweetalert2'
+import Header from './Header'
+import { useLocation } from 'react-router-dom'
 
 export const ContactForm = () => {
 
-    const SERVICE_ID = "service_geyr7xg";
-const TEMPLATE_ID = "template_1mzgvd4";
-const USER_ID = "Fu7cNyKZuJb1UyamB";
+  const location = useLocation()
+  const {pathname} = location
+  let title = pathname.substr(1, pathname.length)
+  console.log(title)
 
-const form = useRef()
+  const SERVICE_ID = "service_geyr7xg";
+  const TEMPLATE_ID = "template_1mzgvd4";
+  const USER_ID = "Fu7cNyKZuJb1UyamB";
 
-const handleOnSubmit = (e) => {
+  const form = useRef()
+
+  const handleOnSubmit = (e) => {
     e.preventDefault();
     // const form = useRef()
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -33,7 +40,8 @@ const handleOnSubmit = (e) => {
     e.target.reset()
   }
 
-  return (
+  return (<>
+    <Header title={title}/>
     <div className='contactForm'>
       <Form
        onSubmit={handleOnSubmit}
@@ -101,7 +109,7 @@ const handleOnSubmit = (e) => {
         <Button type='submit' color='black'>Submit</Button>
       </Form>
     </div>
-  )
+  </>)
 }
 
 // export default ContactForm

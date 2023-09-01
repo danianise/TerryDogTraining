@@ -32,28 +32,31 @@ function Carousel({testimonialArray}) {
     </div>
   </>
   : <>
+  
     <div className="slide-container">
-      <Fade indicators={true} canSwipe={true}>
-        {testimonialArray.map((eachTestimonial, index) => (
-          <div className="each-fade" key={index}>
-            <div className='testimonial_card'>
-                        <span id='left_quote'>
-                            <FaQuoteLeft />
-                        </span>
-                        <br />
-                        <br />
-                        <p id='testimonial_card_p'>
-                            {eachTestimonial.abbreviated}
-                            <span id='right_quote'>
-                                <FaQuoteRight />
-                            </span>
-                        </p>
-                        <p id='testimonial_card_name'>
-                            {eachTestimonial.name}
-                        </p>
-                    </div>
-          </div>
-        ))}
+      <Fade indicators={false} canSwipe={true}>
+        {testimonialArray.map((eachTestimonial, index) => (<>
+          <a href='/testimonials'>
+            <div className="each-fade" key={index}>
+              <div className='testimonial_card'>
+                          <span id='left_quote'>
+                              <FaQuoteLeft />
+                          </span>
+                          <br />
+                          <br />
+                          <p id='testimonial_card_p'>
+                              {eachTestimonial.abbreviated}
+                              <span id='right_quote'>
+                                  <FaQuoteRight />
+                              </span>
+                          </p>
+                          <p id='testimonial_card_name'>
+                              {eachTestimonial.name}
+                          </p>
+                      </div>
+            </div>
+          </a>
+        </>))}
       </Fade>
     </div>
     </>

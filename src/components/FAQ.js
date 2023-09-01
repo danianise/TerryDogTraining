@@ -1,8 +1,17 @@
 import React from 'react'
 import '../css/FAQ.css'
+import Header from './Header'
+import { useLocation } from 'react-router-dom'
 
 function FAQ() {
-  return (
+
+    const location = useLocation()
+    const {pathname} = location
+    let title = pathname.substr(1, pathname.length)
+    console.log(title)
+
+  return (<>
+    <Header title={title}/>
     <div className='faq'>
         <h2 id='first_faq_h2'>
             What training methods do you use?
@@ -74,7 +83,7 @@ function FAQ() {
         </p>
 
     </div>
-  )
+  </>)
 }
 
 export default FAQ

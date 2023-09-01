@@ -1,8 +1,17 @@
 import React from 'react'
 import "../css/About.css"
+import Header from './Header'
+import { useLocation } from 'react-router-dom'
 
 function About() {
-  return (
+
+    const location = useLocation()
+    const {pathname} = location
+    let title = pathname.substr(1, pathname.length)
+    console.log(title)
+
+  return (<>
+    <Header title={title} />
     <div className='about'>
         <h2 id='firstH2'>
             Unleash Your Dog's Potential with Positive Training Methods
@@ -65,15 +74,8 @@ function About() {
         and let's start a partnership that will empower your dog to shine. 
         </p>
 
-
-
-
-
-
-        
-
     </div>
-  )
+    </>)
 }
 
 export default About
