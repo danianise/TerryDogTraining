@@ -5,36 +5,74 @@ import "../css/TestimonialCard.css"
 export default function TestimonialCard({testimonialArray}) {
 
     return (<>
-            {testimonialArray.map((eachTestimonial) => {
-                return(
-                    <div className='testimonial_card'>
-
-                        <div id='testimonial_main'>
-                            <div id='testimonial_text'>
-                                <span id='left_quote'>
-                                    <FaQuoteLeft />
-                                </span>
-                                <br />
-                                <br />
-                                <p id='testimonial_card_p'>
-                                    {eachTestimonial.paragraph}
-                                    <span id='right_quote'>
-                                        <FaQuoteRight />
+            {testimonialArray.map((eachTestimonial, index) => {
+                if(index%2===0){
+                    return(
+                        <div className='testimonial_card'>
+    
+                            <div id='testimonial_main'>
+    
+                                <div id='testimonial_dog'>
+                                    <img src={eachTestimonial.image}/>
+                                </div>
+    
+                                <div id='testimonial_text'>
+                                    <span id='left_quote'>
+                                        <FaQuoteLeft />
                                     </span>
-                                </p>
-                            </div>
-
-                            <div id='testimonial_dog'>
-                                <img src={eachTestimonial.image}/>
-                            </div>
-                        </div>    
-
-                        <p id='testimonial_card_name'>
-                            {eachTestimonial.name}
-                        </p>
-
-                    </div>
-                )
+                                    <br />
+                                    <br />
+                                    <p id='testimonial_card_p'>
+                                        {eachTestimonial.paragraph}
+                                        <span id='right_quote'>
+                                            <FaQuoteRight />
+                                        </span>
+                                    </p>
+                                </div>
+    
+                                {/* <div id='testimonial_dog'>
+                                    <img src={eachTestimonial.image}/>
+                                </div> */}
+                            </div>    
+    
+                            <p id='testimonial_card_name'>
+                                {eachTestimonial.name}
+                            </p>
+    
+                        </div>
+                    )
+                } else{
+                    return(
+                        <div className='testimonial_card'>
+    
+                            <div id='testimonial_main'>
+                                <div id='testimonial_text'>
+                                    <span id='left_quote'>
+                                        <FaQuoteLeft />
+                                    </span>
+                                    <br />
+                                    <br />
+                                    <p id='testimonial_card_p'>
+                                        {eachTestimonial.paragraph}
+                                        <span id='right_quote'>
+                                            <FaQuoteRight />
+                                        </span>
+                                    </p>
+                                </div>
+    
+                                <div id='testimonial_dog'>
+                                    <img src={eachTestimonial.image}/>
+                                </div>
+                            </div>    
+    
+                            <p id='testimonial_card_name'>
+                                {eachTestimonial.name}
+                            </p>
+    
+                        </div>
+                    )
+                }
+                
             })}
         </>)
 
