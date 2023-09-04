@@ -50,6 +50,7 @@
 }
 
 #testimonial_dog img{
+    border-top-left-radius: 2rem;
     height: 25vh;
     width: auto;
     margin-top: 10px;
