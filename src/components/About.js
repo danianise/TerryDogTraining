@@ -15,6 +15,8 @@ function About() {
 
     <div className='pricing'>
         <p>
+            One-on-one training in YOUR home!
+            <br />
             $35 per 1 hour session
             <br />
             For dog households in Cheshire, Lanesborough, Pittsfield, Lenox, Lee, Great Barrington and North Adams
@@ -78,7 +80,7 @@ function About() {
             </a>
         </h2>
         <p>
-        Ready to embark on a training experience that's as enriching as it is enjoyable? Reach out to me today by filling out <a id='contact_p' href='/contact'><b>THIS FORM</b></a>, 
+        Ready to embark on a training experience that's as enriching as it is enjoyable? Reach out to me today by filling out <a className='contact_p' href='/contact'><b>THIS FORM</b></a>, 
         and let's start a partnership that will empower your dog to shine. 
         </p>
 

@@ -15,6 +15,8 @@ function FAQ() {
 
     <div className='pricing'>
         <p>
+            One-on-one training in YOUR home!
+            <br />
             $35 per 1 hour session
             <br />
             For dog households in Cheshire, Lanesborough, Pittsfield, Lenox, Lee, Great Barrington and North Adams
@@ -41,11 +43,10 @@ function FAQ() {
         </p>
 
         <h2>
-            Can you come to my house for training if I live in Lenox?
+            Can you come to my house for training if I live in a town you haven't listed?
         </h2>
         <p>
-            Yes, I will travel to many towns in the Berkshires, such as Cheshire, Lanesborough, 
-            Pittsfield, Lenox, Lee, Great Barrington and North Adams. 
+            I will travel to many towns in the Berkshires. It is possible that I can come to a town that is not listed for an extra fee. If you live in a town that is not listed, please contact me with <a className='contact_p' href='/contact'><b>THIS FORM</b></a> for more information.
         </p>
 
         <h2>

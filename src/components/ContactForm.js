@@ -45,6 +45,8 @@ export const ContactForm = () => {
 
     <div className='pricing'>
         <p>
+          One-on-one training in YOUR home!
+          <br />
             $35 per 1 hour session
             <br />
             For dog households in Cheshire, Lanesborough, Pittsfield, Lenox, Lee, Great Barrington and North Adams

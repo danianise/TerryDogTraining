@@ -30,6 +30,10 @@ a:visited, a:hover, a:active {
   width: 95%;
 }
 
+.contact_p:hover{
+  font-size: x-large;
+}
+
 @media screen and (max-width:1170px) {
   #main_h1{
     font-size: 250%;
