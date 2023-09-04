@@ -35,3 +35,15 @@ a:visited, a:hover, a:active {
     font-size: 250%;
   }
 }
+
+@media screen and (max-width:900px) {
+  #main_h1{
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #main_h1{
+    font-size:x-large;
+  }
+}
