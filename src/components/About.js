@@ -73,12 +73,12 @@ function About() {
         </p>
 
         <h2>
-            <a href='/contact'>
+            <a id='contact_h' href='/contact'>
                 Contact Me
             </a>
         </h2>
         <p>
-        Ready to embark on a training experience that's as enriching as it is enjoyable? Reach out to me today by filling out <a href='/contact'><b>THIS FORM</b></a>, 
+        Ready to embark on a training experience that's as enriching as it is enjoyable? Reach out to me today by filling out <a id='contact_p' href='/contact'><b>THIS FORM</b></a>, 
         and let's start a partnership that will empower your dog to shine. 
         </p>
 

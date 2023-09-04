@@ -26,8 +26,16 @@
     color: black;
   }
 
-  .about a{
+  #contact_h{
     color: white;
+  }
+
+  #contact_h:hover{
+    color: black;
+  }
+
+  #contact_p:hover{
+    font-size: x-large;
   }
   
   #firstH2 {
