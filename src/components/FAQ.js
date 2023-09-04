@@ -12,6 +12,15 @@ function FAQ() {
 
   return (<>
     <Header title={title}/>
+
+    <div className='pricing'>
+        <p>
+            $35 per 1 hour session
+            <br />
+            For dog households in Cheshire, Lanesborough, Pittsfield, Lenox, Lee, Great Barrington and North Adams
+        </p>
+    </div>
+
     <div className='faq'>
         <h2 id='first_faq_h2'>
             What training methods do you use?

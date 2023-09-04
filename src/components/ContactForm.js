@@ -42,6 +42,15 @@ export const ContactForm = () => {
 
   return (<>
     <Header title={title}/>
+
+    <div className='pricing'>
+        <p>
+            $35 per 1 hour session
+            <br />
+            For dog households in Cheshire, Lanesborough, Pittsfield, Lenox, Lee, Great Barrington and North Adams
+        </p>
+    </div>
+
     <div className='contactForm'>
       <Form
        onSubmit={handleOnSubmit}

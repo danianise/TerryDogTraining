@@ -12,6 +12,14 @@ function About() {
 
   return (<>
     <Header title={title} />
+
+    <div className='pricing'>
+        <p>
+            $35 per 1 hour session
+            <br />
+            For dog households in Cheshire, Lanesborough, Pittsfield, Lenox, Lee, Great Barrington and North Adams
+        </p>
+    </div>
     <div className='about'>
         <h2 id='firstH2'>
             Unleash Your Dog's Potential with Positive Training Methods
